@@ -6,9 +6,9 @@ import { NavLink } from 'react-router';
 
 const NavBar = () => {
     const links = <>
-        <li className='mr-4 inter font-medium'>Home</li>
-        <li className='mr-4 inter font-medium'>Apps</li>
-        <li className='mr-4 inter font-medium'>Installtion</li>
+        <li className='text-lg text-gray-600 mr-4 inter font-medium'>Home</li>
+        <li className='text-lg text-gray-600 mr-4 inter font-medium'>Apps</li>
+        <li className='text-lg text-gray-600 mr-4 inter font-medium'>Installtion</li>
         
     </>
     return (
