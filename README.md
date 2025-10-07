@@ -17,7 +17,7 @@ React.js – for component-based structure and real-time rendering.
 
 Key Features:
 
-Collection of 30+ useful mini web apps
+Collection of useful mini web apps
 
 Lightweight and fast performance
 
