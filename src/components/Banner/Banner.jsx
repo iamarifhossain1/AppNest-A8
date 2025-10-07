@@ -20,8 +20,9 @@ const Banner = () => {
                     <img src={hero} alt=""  className='mx-auto mt-10 px-5 lg:px-0'/>
                 </div>
 
-                <div className='flex flex-col lg:flex-row bg-gradient-to-r from-[#632EE3] to-[#9F62F2] py-5 lg:py-20'>
+                <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] py-5 lg:py-20'>
                     <h1 className='text-white text-2xl lg:text-4xl text-center font-semibold px-4 lg:px-0'>Trusted by Millions, Built for You</h1>
+                    
                     <div className='flex flex-col lg:flex-row text-center justify-center items-center lg:gap-24 mt-5 lg:mt-10'>
                         <div className='space-y-4'>
                             <p className='text-white font-extralight'>Total Downloads</p>
