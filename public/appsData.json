@@ -4,9 +4,10 @@
     "title": "Spotify",
     "companyName": "Spotify AB",
     "id": 1,
-    "description": "Stream music and podcasts online or offline anytime, anywhere you go.",
+    "description": "Stream music and podcasts online or offline anytime, anywhere.",
     "size": 85,
-    "reviews": 23000000,
+    "fileSize": "230MB",
+    "reviews": "2.3M",
     "ratingAvg": 4.6,
     "downloads": "45M",
     "ratings": [
@@ -15,7 +16,9 @@
       { "name": "3 star", "count": 1500000 },
       { "name": "4 star", "count": 4500000 },
       { "name": "5 star", "count": 16000000 }
-    ]
+    ],
+    "appDetails": "Spotify is one of the world’s leading music streaming platforms that lets you discover, play, and share millions of songs and podcasts. You can create your own playlists or explore curated ones for every mood. It offers personalized recommendations based on your listening habits. Premium users can enjoy offline playback and ad-free listening. Spotify also includes podcasts and radio features for a complete audio experience.",
+    "action": "Install Now"
   },
   {
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
@@ -24,7 +27,8 @@
     "id": 2,
     "description": "Send texts, calls, and photos instantly with friends and family.",
     "size": 70,
-    "reviews": 170000000,
+    "fileSize": "160MB",
+    "reviews": "1.7M",
     "ratingAvg": 4.3,
     "downloads": "67M",
     "ratings": [
@@ -33,7 +37,9 @@
       { "name": "3 star", "count": 20000000 },
       { "name": "4 star", "count": 30000000 },
       { "name": "5 star", "count": 108000000 }
-    ]
+    ],
+    "appDetails": "WhatsApp Messenger is a free communication app that allows users to send text messages, make voice and video calls, and share photos, videos, and documents securely. All conversations are protected with end-to-end encryption. It also supports group chats and voice notes for easier communication. WhatsApp Web and multi-device sync make it easy to use on any platform. It’s fast, private, and one of the most popular messaging apps in the world.",
+    "action": "Install Now"
   },
   {
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png",
@@ -42,7 +48,8 @@
     "id": 3,
     "description": "Share posts, photos, and connect with friends and communities online.",
     "size": 120,
-    "reviews": 130000000,
+    "fileSize": "410MB",
+    "reviews": "1.3M",
     "ratingAvg": 4.1,
     "downloads": "52M",
     "ratings": [
@@ -51,7 +58,9 @@
       { "name": "3 star", "count": 25000000 },
       { "name": "4 star", "count": 35000000 },
       { "name": "5 star", "count": 45000000 }
-    ]
+    ],
+    "appDetails": "Facebook is a global social media platform that connects billions of people. Users can share posts, upload photos and videos, comment on others’ updates, and join interest-based groups. It also features a marketplace for buying and selling, live streaming, and event organization. Facebook’s timeline lets you see what your friends and family are sharing in real time. Businesses also use Facebook for marketing and connecting with customers.",
+    "action": "Install Now"
   },
   {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png",
@@ -60,7 +69,8 @@
     "id": 4,
     "description": "Share photos, reels, and stories with friends and followers easily.",
     "size": 95,
-    "reviews": 130000000,
+    "fileSize": "320MB",
+    "reviews": "1.3M",
     "ratingAvg": 4.4,
     "downloads": "88M",
     "ratings": [
@@ -69,16 +79,19 @@
       { "name": "3 star", "count": 20000000 },
       { "name": "4 star", "count": 32000000 },
       { "name": "5 star", "count": 64000000 }
-    ]
+    ],
+    "appDetails": "Instagram is a visual-based social network where users share photos, reels, and stories. It helps you stay updated with friends, follow celebrities, and explore global trends. The platform includes built-in filters, editing tools, and Reels for creative short videos. You can also shop from brands directly through posts. With messaging and story features, Instagram combines social networking with creativity and lifestyle inspiration.",
+    "action": "Install Now"
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
+    "image": "https://img.freepik.com/premium-photo/tiktok-logo_1080029-103.jpg?semt=ais_hybrid&w=740&q=80",
     "title": "TikTok",
     "companyName": "TikTok Pte. Ltd.",
     "id": 5,
     "description": "Watch, create, and share short videos for fun and entertainment.",
     "size": 110,
-    "reviews": 95000000,
+    "fileSize": "280MB",
+    "reviews": "950k",
     "ratingAvg": 4.5,
     "downloads": "34M",
     "ratings": [
@@ -87,7 +100,9 @@
       { "name": "3 star", "count": 10000000 },
       { "name": "4 star", "count": 18000000 },
       { "name": "5 star", "count": 57000000 }
-    ]
+    ],
+    "appDetails": "TikTok is a short-form video platform that lets users express creativity through music, dance, and comedy clips. Its algorithm tailors content to your interests for endless entertainment. The app provides editing tools, sound effects, and filters to make videos stand out. Users can interact via likes, comments, and duets. TikTok has become a hub for trends, influencers, and viral challenges across all age groups.",
+    "action": "Install Now"
   },
   {
     "image": "https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg",
@@ -96,7 +111,8 @@
     "id": 6,
     "description": "Send snaps, chat, and share fun moments with your friends.",
     "size": 60,
-    "reviews": 31000000,
+    "fileSize": "150MB",
+    "reviews": "310k",
     "ratingAvg": 4.2,
     "downloads": "23M",
     "ratings": [
@@ -105,16 +121,19 @@
       { "name": "3 star", "count": 5000000 },
       { "name": "4 star", "count": 8000000 },
       { "name": "5 star", "count": 13000000 }
-    ]
+    ],
+    "appDetails": "Snapchat is a multimedia messaging app that lets users send photos and videos that disappear after viewing. It offers fun filters, lenses, and Bitmoji to personalize snaps. Users can create daily stories and explore content from creators and publishers. Snap Map allows you to share your location with friends. With privacy-first design, Snapchat encourages real and spontaneous communication.",
+    "action": "Install Now"
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg",
+    "image": "https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-youtube-social-media-round-icon-png-image_6315993.png",
     "title": "YouTube",
     "companyName": "Google LLC",
     "id": 7,
     "description": "Watch and upload videos, follow creators, and explore trending content.",
     "size": 150,
-    "reviews": 145000000,
+    "fileSize": "500MB",
+    "reviews": "1.45M",
     "ratingAvg": 4.7,
     "downloads": "76M",
     "ratings": [
@@ -123,7 +142,9 @@
       { "name": "3 star", "count": 12000000 },
       { "name": "4 star", "count": 25000000 },
       { "name": "5 star", "count": 96000000 }
-    ]
+    ],
+    "appDetails": "YouTube is the world’s largest video-sharing platform where users can watch, upload, and comment on videos. It covers everything from tutorials to entertainment and live streaming. Subscriptions let you follow favorite creators easily. YouTube Premium offers ad-free viewing and offline playback. With YouTube Shorts, users can create and watch short videos in a TikTok-like experience.",
+    "action": "Install Now"
   },
   {
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg",
@@ -132,7 +153,8 @@
     "id": 8,
     "description": "Fast, secure messaging with cloud backup and private chat options.",
     "size": 65,
-    "reviews": 15000000,
+    "fileSize": "200MB",
+    "reviews": "1.5M",
     "ratingAvg": 4.5,
     "downloads": "19M",
     "ratings": [
@@ -141,6 +163,8 @@
       { "name": "3 star", "count": 1500000 },
       { "name": "4 star", "count": 3500000 },
       { "name": "5 star", "count": 8800000 }
-    ]
+    ],
+    "appDetails": "Telegram is a cloud-based instant messaging app focused on speed and security. It supports large group chats, channels, and file sharing up to 2GB. Messages sync instantly across devices and can be accessed from anywhere. Secret chats come with end-to-end encryption and self-destruct timers. Telegram bots and stickers add more functionality and fun for everyday use.",
+    "action": "Install Now"
   }
 ]

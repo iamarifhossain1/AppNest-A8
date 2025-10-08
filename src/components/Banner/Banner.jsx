@@ -12,8 +12,8 @@ const Banner = () => {
                 <h1 className='text-2xl lg:text-7xl text-center font-bold lg:leading-24'>We Build <br /> <span className='text-[#632EE3]'> Productive</span> Apps</h1>
                 <p className='text-gray-500 mt-5 text-center px-2 lg:px-0'>At AppNest, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 <div className='text-cente flex flex-col lg:flex-row justify-center px-4'>
-                    <a href="https://play.google.com/store/games?hl=en" target='blank' className='btn border-1 border-gray-200 shadow-sm lg:mr-5 mt-10 hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:text-white hover:-translate-y-1 hover:scale-105 hover:rotate-1 hover:animate-bounce'><span><img src={android} alt=""  className='w-5 mr-1'/></span> Google Play</a>
-                    <a href="https://www.apple.com/app-store/" target='blank' className='btn border-1 border-gray-200 shadow-sm mt-5 lg:mt-10 hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:text-white hover:-translate-y-1 hover:scale-105 hover:-rotate-1 hover:animate-bounce'><span><img src={ios} alt=""  className='w-5 mr-1'/></span> App Store</a>
+                    <a href="https://play.google.com/store/games?hl=en" target='blank' className='btn border-1 border-gray-200 shadow-sm lg:mr-5 mt-10 hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:text-white hover:-translate-y-1 hover:scale-105 hover:rotate-1 hover:animate-bounce hover:duration-5000'><span><img src={android} alt=""  className='w-5 mr-1'/></span> Google Play</a>
+                    <a href="https://www.apple.com/app-store/" target='blank' className='btn border-1 border-gray-200 shadow-sm mt-5 lg:mt-10 hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:text-white hover:-translate-y-1 hover:scale-105 hover:-rotate-1 hover:animate-bounce hover:duration-5000'><span><img src={ios} alt=""  className='w-5 mr-1'/></span> App Store</a>
                 </div>
 
                 <div>

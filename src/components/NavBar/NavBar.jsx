@@ -2,13 +2,14 @@ import React from 'react';
 import '../../../src/App.css'
 import logo from '../../assets/app-nest-logo.png'
 import gitLogo from '../../assets/github.png'
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const NavBar = () => {
     const links = <>
-        <li className='text-lg text-gray-600 mr-4 inter font-medium'>Home</li>
-        <li className='text-lg text-gray-600 mr-4 inter font-medium'>Apps</li>
-        <li className='text-lg text-gray-600 mr-4 inter font-medium'>Installtion</li>
+        <Link to='/'><li className='text-lg text-gray-600 mr-4 inter font-medium'>Home</li></Link>
+        <Link to='/apps'><li className='text-lg text-gray-600 mr-4 inter font-medium'>Apps</li></Link>
+        <Link to='/installation'><li className='text-lg text-gray-600 mr-4 inter font-medium'>Installation</li></Link>
+        
         
     </>
     return (
