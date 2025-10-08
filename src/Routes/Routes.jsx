@@ -11,8 +11,7 @@ export const router = createBrowserRouter([
     Component: Root,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
-        {index: true, path: '/', Component: Home},
-        {}
+        {index: true, loader: () => fetch('/public/appsData.json'),  path: '/', Component: Home},
     ]
   },
 ]);
