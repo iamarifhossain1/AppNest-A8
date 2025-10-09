@@ -2,13 +2,31 @@ import React from 'react';
 import '../../../src/App.css'
 import logo from '../../assets/app-nest-logo.png'
 import gitLogo from '../../assets/github.png'
-import { Link, NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router-dom';
+import { House, LayoutGrid, MonitorDown } from 'lucide-react';
 
 const NavBar = () => {
+
+        const activeLink = ({isActive}) => isActive ? 'border-b-2  pb-1 text-[#632EE3] ' : 'text-gray-600';
+
     const links = <>
-        <Link to='/'><li className='text-lg text-gray-600 mr-4 inter font-medium'>Home</li></Link>
-        <Link to='/apps'><li className='text-lg text-gray-600 mr-4 inter font-medium'>Apps</li></Link>
-        <Link to='/installation'><li className='text-lg text-gray-600 mr-4 inter font-medium'>Installation</li></Link>
+        <NavLink to='/' className={activeLink}>
+            <div className='flex gap-1 items-center'>
+                <House className='text-gray-600 w-5'></House> <li className='text-lg text-gray-600 mr-4 inter font-medium'>Home</li>
+            </div>
+        </NavLink>
+
+        <NavLink to='/apps' className={activeLink}>
+            <div className='flex gap-1 items-center'>
+                <LayoutGrid className='text-gray-600 w-5'></LayoutGrid> <li className='text-lg text-gray-600 mr-4 inter font-medium'>Apps</li>
+            </div>
+        </NavLink>
+
+        <NavLink to='/installation' className={activeLink}> 
+            <div className='flex gap-1 items-center'>
+                <MonitorDown className='text-gray-600 w-5'></MonitorDown> <li className='text-lg text-gray-600 mr-4 inter font-medium'>Installation</li>
+            </div>
+        </NavLink>
         
         
     </>
