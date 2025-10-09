@@ -4,6 +4,7 @@ import { useLoaderData, useParams } from 'react-router';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BarChart } from 'recharts';
+import { Bar, XAxis, YAxis, Tooltip, ResponsiveContainer} from "recharts";
 
 const AppDetails = () => {
 
@@ -11,7 +12,7 @@ const AppDetails = () => {
     const appId = parseInt(id);
     const appData = useLoaderData();
     const singleApp = appData.find(app => app.id === appId);
-    const {title, image, companyName, downloads, ratingAvg, reviews, action, fileSize, ratings} = singleApp;
+    const {title, image, companyName, downloads, ratingAvg, reviews, action, fileSize, ratings, appDetails} = singleApp;
     const [install, setInstall] = useState(false);
         
     const handleInstall = () => { 
@@ -58,12 +59,30 @@ const AppDetails = () => {
                     <button disabled={install} className={`btn bg-green-600 text-white mt-2 ${install ? 'opacity-60 cursor-not-allowed text-black' : ''}`} onClick={handleInstall}>{install ? 'Installed' : action}  ({fileSize})</button>
                     <hr className='mt-5 text-gray-300'/>
                 </div>
+                
             </div>
 
-                <div className='text-2xl font-bold'>
-                    <h1>Ratings</h1>
+                 <div className="mt-10 bg-[#F5F5F5] p-6 rounded-2xl ">
+                    <h2 className="text-2xl font-bold mb-4">Ratings</h2>
+                    <ResponsiveContainer width="100%" height={250}>
+                    <BarChart
+                        data={[...ratings.slice().reverse()]}
+                        
+                        layout="vertical"
+                        margin={{ top: 10, right: 30, left: 50, bottom: 10 }}
+                    >
+                        <XAxis type="number" />
+                        <YAxis dataKey="name" type="category" width={70} />
+                        <Tooltip />
+                        <Bar dataKey="count" radius={[0, 8, 8, 0]} fill="#FF8C00" />
+                    </BarChart>
+                    </ResponsiveContainer>
                 </div>
-
+                    <hr  className='mt-5 text-gray-300'/>
+                    <div className='px-5 mt-5'>
+                        <h1 className='text-2xl font-semibold'>Description</h1>
+                        <p className='mt-5 text-gray-500'>{appDetails}</p>
+                    </div>
             <ToastContainer />
         </div>
     );

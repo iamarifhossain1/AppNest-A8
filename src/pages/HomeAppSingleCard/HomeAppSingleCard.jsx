@@ -13,7 +13,7 @@ const HomeAppSingleCard = ({singleCard}) => {
                     <div className="card-body">
                         <h2 className="card-title">{title}</h2>
                         <p>{description}</p>
-                        <div className="flex justify-between items-center">
+                        <div className="flex justify-between items-center mt-2">
                             <div className="flex items-center bg-[#F1F5E8] text-green-500 gap-1 p-1 rounded-md">
                                 <Download></Download> {downloads}
                             </div>

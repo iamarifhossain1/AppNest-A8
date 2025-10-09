@@ -2,15 +2,15 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="footer footer-horizontal footer-center bg-[#F5F5F5] text-base-content rounded p-10">
+        <footer className="footer footer-horizontal footer-center bg-black text-white-content rounded p-10">
             <nav className="grid grid-flow-col gap-4">
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
+                <a className="text-white link link-hover">About us</a>
+                <a className="text-white link link-hover">Contact</a>
+                <a className="text-white link link-hover">Jobs</a>
+                <a className="text-white link link-hover">Press kit</a>
             </nav>
             <nav>
-                <div className="grid grid-flow-col gap-4">
+                <div className="grid grid-flow-col gap-4 text-white">
                 <a>
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
             </nav>
             <aside>
-                <p>© 2025 AppNest | A Productivity Tools Collection by Arif Hossain</p>
+                <p className='text-white'>© 2025 AppNest | A Productivity Tools Collection by Arif Hossain</p>
             </aside>
 </footer>
     );
