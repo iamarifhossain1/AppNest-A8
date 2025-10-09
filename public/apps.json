@@ -1,0 +1,338 @@
+[
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 1,
+    "description": "Stream music and podcasts online or offline anytime, anywhere.",
+    "size": 85,
+    "fileSize": "230MB",
+    "reviews": "2.3M",
+    "ratingAvg": 4.6,
+    "downloads": "45M",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 700000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 4500000 },
+      { "name": "5 star", "count": 16000000 }
+    ],
+    "appDetails": "Spotify is one of the world’s most popular music streaming services, giving users access to millions of songs, albums, and podcasts in just a few taps...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "id": 2,
+    "description": "Send texts, calls, and photos instantly with friends and family.",
+    "size": 70,
+    "fileSize": "160MB",
+    "reviews": "1.7M",
+    "ratingAvg": 4.3,
+    "downloads": "67M",
+    "ratings": [
+      { "name": "1 star", "count": 5000000 },
+      { "name": "2 star", "count": 7000000 },
+      { "name": "3 star", "count": 20000000 },
+      { "name": "4 star", "count": 30000000 },
+      { "name": "5 star", "count": 108000000 }
+    ],
+    "appDetails": "WhatsApp Messenger is the world’s leading free messaging application...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 3,
+    "description": "Share posts, photos, and connect with friends and communities online.",
+    "size": 120,
+    "fileSize": "410MB",
+    "reviews": "1.3M",
+    "ratingAvg": 4.1,
+    "downloads": "52M",
+    "ratings": [
+      { "name": "1 star", "count": 10000000 },
+      { "name": "2 star", "count": 15000000 },
+      { "name": "3 star", "count": 25000000 },
+      { "name": "4 star", "count": 35000000 },
+      { "name": "5 star", "count": 45000000 }
+    ],
+    "appDetails": "Facebook is the original social networking giant that connects billions of people worldwide...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png",
+    "title": "Instagram",
+    "companyName": "Instagram",
+    "id": 4,
+    "description": "Share photos, reels, and stories with friends and followers easily.",
+    "size": 95,
+    "fileSize": "320MB",
+    "reviews": "1.3M",
+    "ratingAvg": 4.4,
+    "downloads": "88M",
+    "ratings": [
+      { "name": "1 star", "count": 6000000 },
+      { "name": "2 star", "count": 8000000 },
+      { "name": "3 star", "count": 20000000 },
+      { "name": "4 star", "count": 32000000 },
+      { "name": "5 star", "count": 64000000 }
+    ],
+    "appDetails": "Instagram is a global platform built around creativity, visuals, and storytelling...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://img.freepik.com/premium-photo/tiktok-logo_1080029-103.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "TikTok",
+    "companyName": "TikTok Pte. Ltd.",
+    "id": 5,
+    "description": "Watch, create, and share short videos for fun and entertainment.",
+    "size": 110,
+    "fileSize": "280MB",
+    "reviews": "950k",
+    "ratingAvg": 4.5,
+    "downloads": "34M",
+    "ratings": [
+      { "name": "1 star", "count": 4000000 },
+      { "name": "2 star", "count": 6000000 },
+      { "name": "3 star", "count": 10000000 },
+      { "name": "4 star", "count": 18000000 },
+      { "name": "5 star", "count": 57000000 }
+    ],
+    "appDetails": "TikTok is a short-form video platform that revolutionized how people create and consume content...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 6,
+    "description": "Send snaps, chat, and share fun moments with your friends.",
+    "size": 60,
+    "fileSize": "150MB",
+    "reviews": "310k",
+    "ratingAvg": 4.2,
+    "downloads": "23M",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 3000000 },
+      { "name": "3 star", "count": 5000000 },
+      { "name": "4 star", "count": 8000000 },
+      { "name": "5 star", "count": 13000000 }
+    ],
+    "appDetails": "Snapchat is a fun and fast multimedia messaging app that lets you communicate through photos, videos, and stories...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-youtube-social-media-round-icon-png-image_6315993.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 7,
+    "description": "Watch and upload videos, follow creators, and explore trending content.",
+    "size": 150,
+    "fileSize": "500MB",
+    "reviews": "1.45M",
+    "ratingAvg": 4.7,
+    "downloads": "76M",
+    "ratings": [
+      { "name": "1 star", "count": 5000000 },
+      { "name": "2 star", "count": 7000000 },
+      { "name": "3 star", "count": 12000000 },
+      { "name": "4 star", "count": 25000000 },
+      { "name": "5 star", "count": 96000000 }
+    ],
+    "appDetails": "YouTube is the largest video-sharing platform in the world...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 8,
+    "description": "Fast, secure messaging with cloud backup and private chat options.",
+    "size": 65,
+    "fileSize": "200MB",
+    "reviews": "1.5M",
+    "ratingAvg": 4.5,
+    "downloads": "19M",
+    "ratings": [
+      { "name": "1 star", "count": 700000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 8800000 }
+    ],
+    "appDetails": "Telegram is a fast, cloud-based instant messaging app built for speed, privacy, and reliability...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://images.icon-icons.com/2699/PNG/512/netflix_logo_icon_170919.png",
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "id": 9,
+    "description": "Watch movies, TV shows, and documentaries anytime, anywhere.",
+    "size": 180,
+    "fileSize": "450MB",
+    "reviews": "3.1M",
+    "ratingAvg": 4.8,
+    "downloads": "90M",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 3000000 },
+      { "name": "3 star", "count": 8000000 },
+      { "name": "4 star", "count": 15000000 },
+      { "name": "5 star", "count": 60000000 }
+    ],
+    "appDetails": "Netflix is a global streaming platform offering thousands of movies, series, and exclusive originals...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 10,
+    "description": "Send and receive emails securely with Google's official mail app.",
+    "size": 90,
+    "fileSize": "190MB",
+    "reviews": "2.8M",
+    "ratingAvg": 4.6,
+    "downloads": "100M",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 4000000 },
+      { "name": "3 star", "count": 6000000 },
+      { "name": "4 star", "count": 16000000 },
+      { "name": "5 star", "count": 70000000 }
+    ],
+    "appDetails": "Gmail is a fast, reliable, and secure email platform from Google...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://img.freepik.com/free-vector/twitter-new-2023-x-logo-white-background-vector_1017-45422.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "X (Twitter)",
+    "companyName": "X Corp.",
+    "id": 11,
+    "description": "Stay updated with the latest news and trends across the world.",
+    "size": 100,
+    "fileSize": "250MB",
+    "reviews": "1.9M",
+    "ratingAvg": 4.2,
+    "downloads": "60M",
+    "ratings": [
+      { "name": "1 star", "count": 3000000 },
+      { "name": "2 star", "count": 4000000 },
+      { "name": "3 star", "count": 10000000 },
+      { "name": "4 star", "count": 18000000 },
+      { "name": "5 star", "count": 35000000 }
+    ],
+    "appDetails": "X (formerly Twitter) lets users post updates, follow global events, and share opinions instantly...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://img.freepik.com/premium-vector/round-zoom-logo-isolated-white-background_469489-904.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "Zoom Cloud Meetings",
+    "companyName": "Zoom Video Communications, Inc.",
+    "id": 12,
+    "description": "Host or join video meetings and webinars with ease.",
+    "size": 130,
+    "fileSize": "300MB",
+    "reviews": "1.1M",
+    "ratingAvg": 4.4,
+    "downloads": "48M",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 3000000 },
+      { "name": "3 star", "count": 7000000 },
+      { "name": "4 star", "count": 15000000 },
+      { "name": "5 star", "count": 26000000 }
+    ],
+    "appDetails": "Zoom is a leading video conferencing tool that supports HD meetings, screen sharing, and collaboration...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1200px-Google_Drive_icon_%282020%29.svg.png",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "id": 13,
+    "description": "Store, share, and access your files securely from anywhere.",
+    "size": 95,
+    "fileSize": "210MB",
+    "reviews": "2.2M",
+    "ratingAvg": 4.7,
+    "downloads": "80M",
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 2500000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 9000000 },
+      { "name": "5 star", "count": 62000000 }
+    ],
+    "appDetails": "Google Drive is a cloud-based storage service for safely keeping and sharing files...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://yt3.googleusercontent.com/ytc/AIdro_ncrXPzrg5_WVvTEx_w3El2dorNHS7r9AMO8Mph8l7Z_dU=s900-c-k-c0x00ffffff-no-rj",
+    "title": "Tinder",
+    "companyName": "Match Group",
+    "id": 14,
+    "description": "Meet new people and connect with matches nearby.",
+    "size": 75,
+    "fileSize": "160MB",
+    "reviews": "800k",
+    "ratingAvg": 4.0,
+    "downloads": "32M",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 4000000 },
+      { "name": "3 star", "count": 8000000 },
+      { "name": "4 star", "count": 9000000 },
+      { "name": "5 star", "count": 10000000 }
+    ],
+    "appDetails": "Tinder helps you meet people and build connections through a simple swipe interface...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png",
+    "title": "LinkedIn",
+    "companyName": "Microsoft Corporation",
+    "id": 15,
+    "description": "Connect with professionals and grow your career network.",
+    "size": 100,
+    "fileSize": "220MB",
+    "reviews": "1.6M",
+    "ratingAvg": 4.3,
+    "downloads": "40M",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 3000000 },
+      { "name": "3 star", "count": 6000000 },
+      { "name": "4 star", "count": 12000000 },
+      { "name": "5 star", "count": 22000000 }
+    ],
+    "appDetails": "LinkedIn is the world’s largest professional networking platform that helps users connect, learn, and find job opportunities...",
+    "action": "Install Now"
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png",
+    "title": "PayPal",
+    "companyName": "PayPal Holdings, Inc.",
+    "id": 16,
+    "description": "Send and receive money securely worldwide.",
+    "size": 85,
+    "fileSize": "190MB",
+    "reviews": "1.2M",
+    "ratingAvg": 4.5,
+    "downloads": "55M",
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 2000000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 9000000 },
+      { "name": "5 star", "count": 27000000 }
+    ],
+    "appDetails": "PayPal allows you to send, receive, and manage money securely online with buyer protection and easy transfers...",
+    "action": "Install Now"
+  }
+]

@@ -11,19 +11,19 @@ const NavBar = () => {
 
     const links = <>
         <NavLink to='/' className={activeLink}>
-            <div className='flex gap-1 items-center'>
+            <div className='flex gap-2 items-center'>
                 <House className='text-gray-600 w-5'></House> <li className='text-lg text-gray-600 mr-4 inter font-medium'>Home</li>
             </div>
         </NavLink>
 
         <NavLink to='/apps' className={activeLink}>
-            <div className='flex gap-1 items-center'>
+            <div className='flex gap-2 items-center'>
                 <LayoutGrid className='text-gray-600 w-5'></LayoutGrid> <li className='text-lg text-gray-600 mr-4 inter font-medium'>Apps</li>
             </div>
         </NavLink>
 
         <NavLink to='/installation' className={activeLink}> 
-            <div className='flex gap-1 items-center'>
+            <div className='flex gap-2 items-center'>
                 <MonitorDown className='text-gray-600 w-5'></MonitorDown> <li className='text-lg text-gray-600 mr-4 inter font-medium'>Installation</li>
             </div>
         </NavLink>
@@ -43,8 +43,8 @@ const NavBar = () => {
                 </div>
                 <a href='/'><img src={logo} alt="" className='w-1/2 h-1/2' /></a>
             </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+            <div className="navbar-center hidden lg:flex ">
+                <ul className="menu menu-horizontal px-1 gap-10">
                     {links}
                 </ul>
             </div>

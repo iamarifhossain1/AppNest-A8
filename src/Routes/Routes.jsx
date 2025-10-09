@@ -15,10 +15,10 @@ export const router = createBrowserRouter([
     Component: Root,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
-        {index: true, loader: () => fetch('/public/appsData.json'),  path: '/', Component: Home},
-        {path: 'apps', Component: Apps},
+        {index: true, loader: () => fetch('/public/homeAppsData.json'),  path: '/', Component: Home},
+        {path: 'apps', loader: () => fetch('/public/apps.json'), Component: Apps},
         {path: 'installation', Component: Installation},
-        {path: '/appDetails/:id', loader: () => fetch('/public/appsData.json'), Component: AppDetails}
+        {path: '/appDetails/:id', loader: () => fetch('/public/apps.json'), Component: AppDetails}
     ]
   },
 ]);
