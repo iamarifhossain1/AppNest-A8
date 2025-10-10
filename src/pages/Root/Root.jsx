@@ -3,6 +3,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import { Outlet } from 'react-router';
 import Footer from '../../components/Footer/Footer';
 import Banner from '../../components/Banner/Banner';
+import Home from '../Home/Home';
 
 const Root = () => {
     return (

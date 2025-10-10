@@ -11,7 +11,7 @@ const Apps = () => {
     return (
         <div className='inter bg-[#F5F5F5] py-10'>
             <h1 className='text-4xl font-bold text-center '>Our All Applications</h1>
-            <p className='text-gray-500 text-center mt-2'>Explore All Apps on the Market developed by us. We code for Millions</p>
+            <p className='text-gray-500 text-center mt-2 px-4 lg:px-0'>Explore All Apps on the Market developed by us. We code for Millions</p>
             <div className='container mx-auto flex flex-col lg:flex-row justify-between items-center mt-5'>
                 <div>
                     <h1 className='text-2xl font-semibold '>({allAppsData.length}) Apps Found</h1>

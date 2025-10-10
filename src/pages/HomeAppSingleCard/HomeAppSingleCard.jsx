@@ -15,10 +15,10 @@ const HomeAppSingleCard = ({singleCard}) => {
                         <p>{description}</p>
                         <div className="flex justify-between items-center mt-2">
                             <div className="flex items-center bg-[#F1F5E8] text-green-500 gap-1 p-1 rounded-md">
-                                <Download></Download> {downloads}
+                                <Download className="w-5"></Download> {downloads}
                             </div>
                             <div className="flex items-center bg-[#FFF0E1] text-[#FF8811] gap-1 p-1 rounded-md">
-                                <Star></Star> {ratingAvg}
+                                <Star className="w-5"></Star> {ratingAvg}
                             </div>
                         </div>
                     </div>

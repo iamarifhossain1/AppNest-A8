@@ -1,9 +1,14 @@
 import { Download, Star } from 'lucide-react';
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigation } from 'react-router';
+import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
+import Apps from '../Apps/Apps';
 
 const AllApps = ({allApp}) => {
+    const navigation = useNavigation();
+    
     const {image, title, description, downloads, ratingAvg, id} = allApp;
+    if (navigation.state === 'loading' ? LoadingSpinner : Apps );
     
     return (
         <div>
@@ -16,10 +21,10 @@ const AllApps = ({allApp}) => {
                         <p>{description}</p>
                         <div className="flex justify-between items-center mt-2">
                             <div className="flex items-center bg-[#F1F5E8] text-green-500 gap-1 p-1 rounded-md">
-                                <Download></Download> {downloads}
+                                <Download className="w-5"></Download> {downloads}
                             </div>
                             <div className="flex items-center bg-[#FFF0E1] text-[#FF8811] gap-1 p-1 rounded-md">
-                                <Star></Star> {ratingAvg}
+                                <Star className="w-5"></Star> {ratingAvg}
                             </div>
                         </div>
                     </div>

@@ -1,10 +1,11 @@
 import { Download, Star, ThumbsUp } from 'lucide-react';
 import React, { useState } from 'react';
-import { useLoaderData, useNavigate, useParams } from 'react-router';
+import { useLoaderData, useNavigate, useNavigation, useParams } from 'react-router';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BarChart } from 'recharts';
 import { Bar, XAxis, YAxis, Tooltip, ResponsiveContainer} from "recharts";
+import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 
 
 const AppDetails = () => {
@@ -25,6 +26,8 @@ const AppDetails = () => {
     }
 
     const navigate = useNavigate();
+    const navigation = useNavigation();
+    if (navigation.state === 'loading' ? LoadingSpinner : AppDetails)
 
     return (
         <div className='bg-[#F5F5F5] lg:px-20 pb-10'>
