@@ -9,7 +9,9 @@ const AllApps = ({allApp}) => {
     const navigation = useNavigation();
     
     const {image, title, description, downloads, ratingAvg, id} = allApp;
-    if (navigation.state === 'loading' ? LoadingSpinner : Apps );
+    if (navigation.state === 'loading') {
+    return <LoadingSpinner />;
+  }
     
     return (
         <div>
