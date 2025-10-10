@@ -1,8 +1,9 @@
 import { Download, Star } from 'lucide-react';
-import React from 'react';
+
 import { Link, useNavigation } from 'react-router';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 import Apps from '../Apps/Apps';
+import Installation from '../Installation/Installation';
 
 const AllApps = ({allApp}) => {
     const navigation = useNavigation();

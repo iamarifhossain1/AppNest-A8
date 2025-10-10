@@ -1,102 +1,133 @@
 import { Download, Star, ThumbsUp } from 'lucide-react';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useNavigate, useNavigation, useParams } from 'react-router';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { BarChart } from 'recharts';
-import { Bar, XAxis, YAxis, Tooltip, ResponsiveContainer} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 
-
 const AppDetails = () => {
+  const { id } = useParams();
+  const appId = parseInt(id);
+  const appData = useLoaderData();
+  const singleApp = appData.find(app => app.id === appId);
+  const { title, image, companyName, downloads, ratingAvg, reviews, action, fileSize, ratings, appDetails } = singleApp;
 
-    const {id} = useParams()
-    const appId = parseInt(id);
-    const appData = useLoaderData();
-    const singleApp = appData.find(app => app.id === appId);
-    const {title, image, companyName, downloads, ratingAvg, reviews, action, fileSize, ratings, appDetails} = singleApp;
-    const [install, setInstall] = useState(false);
-        
-    const handleInstall = () => { 
-        setInstall(true);
-        toast.success(`${title} installed successfully! 🎉`, {
-            position: 'top-center',
-            autoClose: '3000',
-        })
+  const [install, setInstall] = useState(false);
+  const navigate = useNavigate();
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    const storedApps = JSON.parse(localStorage.getItem('installedApps')) || [];
+    const alreadyInstalled = storedApps.some(app => app.id === appId);
+    if (alreadyInstalled) {
+      setInstall(true);
     }
+  }, [appId]);
 
-    const navigate = useNavigate();
-    const navigation = useNavigation();
-    if (navigation.state === 'loading' ? LoadingSpinner : AppDetails)
+  
+  const handleInstall = () => {
+    const storedApps = JSON.parse(localStorage.getItem('installedApps')) || [];
+    const alreadyInstalled = storedApps.some(app => app.id === appId);
+    if (alreadyInstalled) return;
 
-    return (
-        <div className='bg-[#F5F5F5] lg:px-20 pb-10'>
-            <div className=' flex flex-col lg:flex-row items-center py-10 gap-8'>
+    storedApps.push(singleApp);
+    localStorage.setItem('installedApps', JSON.stringify(storedApps));
+    setInstall(true);
+    toast.success(`${title} installed successfully! 🎉`, {
+      position: 'top-center',
+      autoClose: 2000,
+    });
+  };
 
-                <div>
-                    <img src={image} alt="" className='w-80 bg-white p-5'/>
-                </div>
+  
+  if (navigation.state === 'loading') {
+    return <LoadingSpinner />;
+  }
 
-                <div className='w-full text-center lg:text-left'>
-                    <h1 className='text-3xl font-bold'>{title}</h1>
-                    <p className='mb-4 '>Developed By: <span className='text-indigo-600 font-medium'>{companyName}</span></p>
-                    <hr className='w-full text-gray-300' ></hr>
+  return (
+    <div className='bg-[#F5F5F5] lg:px-20 pb-10'>
+      <div className='flex flex-col lg:flex-row items-center py-10 gap-8'>
+        <div>
+          <img src={image} alt="" className='w-80 bg-white rounded-lg p-5' />
+        </div>
 
-                    <div className='flex justify-center lg:justify-start items-center gap-5 space-y-1 mt-4'>
+        <div className='w-full text-center lg:text-left'>
+          <h1 className='text-3xl font-bold'>{title}</h1>
+          <p className='mb-4'>
+            Developed By: <span className='text-indigo-600 font-medium'>{companyName}</span>
+          </p>
+          <hr className='w-full text-gray-300' />
 
-                        <div className='space-y-1'>
-                            <div className='flex justify-center'><Download className='text-green-600 text-center'></Download></div>
-                            <p className='text-gray-500 text-center'>Download</p>
-                            <h1 className='text-center text-2xl font-bold'>{downloads}</h1>
-                        </div>
-
-                        <div className='space-y-1'>
-                            <div className='flex justify-center'><Star className='text-orange-600'></Star></div>
-                            <p className='text-gray-500'>Average Ratings</p>
-                            <h1 className='text-center text-2xl font-bold'>{ratingAvg}</h1>
-                        </div>
-
-                        <div className='space-y-1'>
-                            <div className='flex justify-center'><ThumbsUp className='bg-indigo-700 text-white p-1 rounded-md'></ThumbsUp></div>
-                            <p className='text-gray-500'>Total Reviews</p>
-                            <h1 className='text-center text-2xl font-bold'>{reviews}</h1>
-                        </div>
-                    </div>
-                    <button disabled={install} className={`btn bg-green-600 mt-2 ${install ? 'opacity-60 cursor-not-allowed text-black' : 'text-white'}`} onClick={handleInstall}>{install ? 'Installed' : `${action} (${fileSize})`} </button>
-                    <hr className='mt-5 text-gray-300'/>
-                </div>
-                
+          <div className='flex justify-center lg:justify-start items-center gap-5 mt-4'>
+            <div className='space-y-1'>
+              <div className='flex justify-center'><Download className='text-green-600' /></div>
+              <p className='text-gray-500 text-center'>Download</p>
+              <h1 className='text-center text-2xl font-bold'>{downloads}</h1>
             </div>
 
-                 <div className='grid grid-cols-1 '>
-                    <div className="lg:mt-10 bg-[#F5F5F5] px-4 lg:p-6 rounded-2xl ">
-                        <h2 className="text-2xl font-bold lg:mb-4">Ratings</h2>
-                        <ResponsiveContainer width="100%" height={250}>
-                        <BarChart
-                            data={[...ratings.slice().reverse()]}
-                            
-                            layout="vertical"
-                            margin={{ top: 10, right: 30, left: 50, bottom: 10 }} >
-                            <XAxis type="number" />
-                            <YAxis dataKey="name" type="category" width={70} />
-                            <Tooltip />
-                            <Bar dataKey="count" radius={[0, 8, 8, 0]} fill="#FF8C00" />
-                        </BarChart>
-                        </ResponsiveContainer>
-                    </div>
-                 </div>
+            <div className='space-y-1'>
+              <div className='flex justify-center'><Star className='text-orange-600' /></div>
+              <p className='text-gray-500'>Average Ratings</p>
+              <h1 className='text-center text-2xl font-bold'>{ratingAvg}</h1>
+            </div>
 
-                    <hr  className='mt-5 text-gray-300'/>
-                    <div className='px-5 mt-5'>
-                        <h1 className='text-2xl font-semibold'>Description</h1>
-                        <p className='mt-5 text-gray-500'>{appDetails}</p>
-                        <div className='text-center mt-5 '>
-                            <button className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white' onClick={() => navigate(-1)}>Go Back</button>
-                        </div>
-                    </div>
-            <ToastContainer />
+            <div className='space-y-1'>
+              <div className='flex justify-center'><ThumbsUp className='bg-indigo-700 text-white p-1 rounded-md' /></div>
+              <p className='text-gray-500'>Total Reviews</p>
+              <h1 className='text-center text-2xl font-bold'>{reviews}</h1>
+            </div>
+          </div>
+
+          <button
+            disabled={install}
+            onClick={handleInstall}
+            className={`btn bg-green-600 mt-3 ${install ? 'opacity-60 cursor-not-allowed text-black' : 'text-white hover:bg-green-700'}`}
+          >
+            {install ? 'Installed' : `${action} (${fileSize})`}
+          </button>
+
+          <hr className='mt-5 text-gray-300' />
         </div>
-    );
+      </div>
+
+      {/* Ratings chart */}
+      <div className='grid grid-cols-1'>
+        <div className="lg:mt-10 bg-[#F5F5F5] px-4 lg:p-6 rounded-2xl ">
+          <h2 className="text-2xl font-bold lg:mb-4">Ratings</h2>
+          <ResponsiveContainer width="100%" height={250}>
+            <BarChart
+              data={[...ratings.slice().reverse()]}
+              layout="vertical"
+              margin={{ top: 10, right: 30, left: 50, bottom: 10 }}
+            >
+              <XAxis type="number" />
+              <YAxis dataKey="name" type="category" width={70} />
+              <Tooltip />
+              <Bar dataKey="count" radius={[0, 8, 8, 0]} fill="#FF8C00" />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+
+      <hr className='mt-5 text-gray-300' />
+
+      <div className='px-5 mt-5'>
+        <h1 className='text-2xl font-semibold'>Description</h1>
+        <p className='mt-5 text-gray-500'>{appDetails}</p>
+        <div className='text-center mt-5 '>
+          <button
+            className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'
+            onClick={() => navigate(-1)}
+          >
+            Go Back
+          </button>
+        </div>
+      </div>
+
+      <ToastContainer />
+    </div>
+  );
 };
 
 export default AppDetails;
